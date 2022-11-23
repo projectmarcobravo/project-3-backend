@@ -52,7 +52,12 @@ const createSeeds = async function () {
          {
             creator: dbUser[0]._id,
             title: "2023 New Year Party",
-            typeOfEvent: "Party"
+            typeOfEvent: "Party",
+            price: 100,
+            // date: 1,
+         },
+         {
+
          }
       ]
       const dbEvent = await Event.create(events)
