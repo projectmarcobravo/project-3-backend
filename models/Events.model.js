@@ -21,7 +21,7 @@ const eventSchema = new Schema(
 
         style: {
             type: String,
-            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
+            enum: ['Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
         },
 
         instruments: {
@@ -57,6 +57,7 @@ const eventSchema = new Schema(
             default: []
         },
 
+
     },
     {
         // this second object adds extra properties: `createdAt` and `updatedAt`
@@ -64,6 +65,6 @@ const eventSchema = new Schema(
     }
 );
 
-const Event = model("Event", eventSchema);
+const Event = model("Event", userSchema);
 
 module.exports = Event;
