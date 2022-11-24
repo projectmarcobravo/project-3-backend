@@ -44,9 +44,8 @@ const userSchema = new Schema(
     },
     style: {
       type: String,
-      enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance"]
-    },
-
+      enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
+  },
     favorite: [{ type: Schema.Types.ObjectId, ref: 'Favorite' }],
     sale: [{ type: Schema.Types.ObjectId, ref: 'Sale' }],
     event: [{ type: Schema.Types.ObjectId, ref: 'Event' }],

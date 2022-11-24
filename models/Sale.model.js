@@ -13,11 +13,11 @@ const saleSchema = new Schema({
         required:true
      }, //ASK IF ITS NUMBER IS OK OR WE NEED TO SPECIFY INTEGER FLOAT ?
 
-    instruments: {
+    instrument: {
         type: String,
         required: true,
         enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
-        'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'mircophone']
+        'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'microphone']
     },
     description:{
         type:String,
@@ -30,7 +30,7 @@ const saleSchema = new Schema({
     }, 
     photo:{
         imageUrl:[String], //link to see images
-        required: true,
+        // required: true,
     }
   },{
     timestamps: true
