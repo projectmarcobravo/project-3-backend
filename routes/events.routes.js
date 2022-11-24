@@ -22,7 +22,7 @@ router.post("/create", isAuthenticated, async (req, res) => {
 
 router.get("/", async (req, res)=> {
    try {
-      const eventsDb = await Event.find().populate("tasks")
+      const eventsDb = await Event.find().populate("creator")
       res.json(eventsDb)
    } catch (error) {
       res.json(error)
@@ -32,7 +32,7 @@ router.get("/", async (req, res)=> {
 router.get("/:eventId", async (req, res) => {
    const { eventId } = req.params
    try {
-      const eventsDb = await Event.findById(eventId).populate("tasks")
+      const eventsDb = await Event.findById(eventId).populate("creator")
       res.json(eventsDb)
    } catch (error) {
       res.json(error)
