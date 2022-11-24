@@ -16,7 +16,6 @@ const eventSchema = new Schema(
             type: String,
             required: [true, "Type of event is required"],
             enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"
-
             ]
         },
 
@@ -66,6 +65,6 @@ const eventSchema = new Schema(
     }
 );
 
-const Event = model("Event", eventSchema);
+const Event = model("Event", userSchema);
 
 module.exports = Event;

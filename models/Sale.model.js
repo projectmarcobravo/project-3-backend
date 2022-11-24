@@ -28,10 +28,9 @@ const saleSchema = new Schema({
         type:Array,
         default: []
     }, 
-    photo:{
-        imageUrl:[String], //link to see images
-        // required: true,
-    }
+    picture: {
+        type: String
+    },
   },{
     timestamps: true
 })
