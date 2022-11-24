@@ -16,13 +16,12 @@ const eventSchema = new Schema(
             type: String,
             required: [true, "Type of event is required"],
             enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"
-
             ]
         },
 
         style: {
             type: String,
-            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance"]
+            enum: ['Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
         },
 
         instruments: {
@@ -66,6 +65,6 @@ const eventSchema = new Schema(
     }
 );
 
-const Event = model("Event", eventSchema);
+const Event = model("Event", userSchema);
 
 module.exports = Event;
