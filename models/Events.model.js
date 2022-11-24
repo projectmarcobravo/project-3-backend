@@ -58,6 +58,7 @@ const eventSchema = new Schema(
             default: []
         },
 
+
     },
     {
         // this second object adds extra properties: `createdAt` and `updatedAt`
