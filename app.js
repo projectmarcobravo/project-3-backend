@@ -24,6 +24,9 @@ app.use("/api/v1/auth", authRoutes);
 const eventRoutes = require("./routes/events.routes");
 app.use("/api/v1/events", eventRoutes);
 
+const classesRoutes = require('./routes/classes.routes')
+app.use('/api', classesRoutes)
+ 
 const salesRoutes = require("./routes/sales.routes");
 app.use("/api/v1/sales", salesRoutes);
 
