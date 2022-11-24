@@ -14,7 +14,7 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Password is required."],
     },
-    fullName: {
+    name: {
       type: String,
       required: [true, "Name is required."],
       trim: true,
@@ -39,14 +39,14 @@ const userSchema = new Schema(
     },
     instruments: {
       type: String,
-      required: true,
       enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
         'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'Microphone']
     },
     style: {
       type: String,
-      enum: ['Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
-  },
+      enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance"]
+    },
+
     favorite: [{ type: Schema.Types.ObjectId, ref: 'Favorite' }],
     sale: [{ type: Schema.Types.ObjectId, ref: 'Sale' }],
     event: [{ type: Schema.Types.ObjectId, ref: 'Event' }],
