@@ -50,12 +50,14 @@ const eventSchema = new Schema(
 
         date: {
             type: Date,
-            // required: [true, "Date is required."],
+            required: [true, "Date is required."],
         },
 
-        coordinates: {
-            type: [String]
+        coordinate: {
+            type: Array,
+            default: []
         },
+
 
     },
     {
