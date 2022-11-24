@@ -1,7 +1,7 @@
 const { Schema, model } = require("mongoose");
 
 // TODO: Please make sure you edit the User model to whatever makes sense in this case
-const userSchema = new Schema(
+const eventSchema = new Schema(
     {
         creator: {
             type: Schema.Types.ObjectId,
@@ -16,13 +16,12 @@ const userSchema = new Schema(
             type: String,
             required: [true, "Type of event is required"],
             enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"
-
             ]
         },
 
         style: {
             type: String,
-            enum: ['Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
+            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
         },
 
         instruments: {
@@ -65,6 +64,6 @@ const userSchema = new Schema(
     }
 );
 
-const Event = model("Event", userSchema);
+const Event = model("Event", eventSchema);
 
 module.exports = Event;
