@@ -8,7 +8,7 @@ const { isAuthenticated } = require("../middleware/jwt.middleware.js");
 router.get("/profile", isAuthenticated, async (req, res)=> {
     const currentUser = req.payload
     try {
-       const profileDb = await User.findById(currentUser._id)
+       const profileDb = await User.findById(currentUser._id).populate("sale event classes")
        res.json(profileDb)
     } catch (error) {
        res.json(error)
