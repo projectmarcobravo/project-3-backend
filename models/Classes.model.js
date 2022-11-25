@@ -2,6 +2,11 @@ const { Schema, model } = require('mongoose')
 
 const classesSchema = new Schema(
     {
+        title: {
+            type: String,
+            required: true
+        },
+        
         instruments: {
             type: String,
             required: true,
@@ -15,6 +20,11 @@ const classesSchema = new Schema(
 
         price: {
             type: Number,
+            required: true
+        },
+
+        description: {
+            type: String,
             required: true
         },
 

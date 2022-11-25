@@ -23,6 +23,9 @@ const userSchema = new Schema(
       type: String,
       trim: true,
     },
+    picture: {
+      type: String,
+    },
     presentationCard: {
       type: [String],
       trim: true,
