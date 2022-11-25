@@ -52,9 +52,9 @@ const eventSchema = new Schema(
             // required: [true, "Date is required."],
         },
 
-        coordinate: {
-            type: Array,
-            default: []
+        adress: {
+            type: String,
+            required: false
         },
 
 
