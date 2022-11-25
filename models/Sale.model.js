@@ -1,6 +1,11 @@
 const { Schema, model } = require("mongoose");
 
 const saleSchema = new Schema({
+    title: {
+        type: String,
+        required: true
+    },
+    
     creator:{ type: Schema.Types.ObjectId, ref: 'User'}, 
 
     city: {
@@ -10,10 +15,10 @@ const saleSchema = new Schema({
 
     price: {
         type:Number,
-        required:true
+        // required:true
      }, //ASK IF ITS NUMBER IS OK OR WE NEED TO SPECIFY INTEGER FLOAT ?
 
-    instrument: {
+    instruments: {
         type: String,
         required: true,
         enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',

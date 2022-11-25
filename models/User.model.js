@@ -23,6 +23,9 @@ const userSchema = new Schema(
       type: String,
       trim: true,
     },
+    picture: {
+      type: String,
+    },
     presentationCard: {
       type: [String],
       trim: true,
@@ -46,7 +49,9 @@ const userSchema = new Schema(
       type: String,
       enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
   },
-    favorite: [{ type: Schema.Types.ObjectId, ref: 'Favorite' }],
+    favoriteSale: [{ type: Schema.Types.ObjectId, ref: 'Sale' }],
+    favoriteEvent: [{ type: Schema.Types.ObjectId, ref: 'Event' }],
+    favoriteClass: [{ type: Schema.Types.ObjectId, ref: 'Classes' }],
     sale: [{ type: Schema.Types.ObjectId, ref: 'Sale' }],
     event: [{ type: Schema.Types.ObjectId, ref: 'Event' }],
     class: [{ type: Schema.Types.ObjectId, ref: 'Class' }],
