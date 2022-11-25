@@ -15,6 +15,7 @@ const saleSchema = new Schema({
 
     price: {
         type:Number,
+        default: 0
         // required:true
      }, //ASK IF ITS NUMBER IS OK OR WE NEED TO SPECIFY INTEGER FLOAT ?
 
@@ -28,13 +29,14 @@ const saleSchema = new Schema({
         type:String,
         required: true,
     },
-    adress: 
+    address: 
     {
         type: String,
-        required: false
+        default: ""
     }, 
     picture: {
-        type: String
+        type: String,
+        default: ""
     },
   },{
     timestamps: true

@@ -21,25 +21,30 @@ const eventSchema = new Schema(
 
         style: {
             type: String,
-            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",]
+            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",],
+            default: ""
         },
 
         instruments: {
             type: String,
             enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
-                'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'Microphone']
+                'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'Microphone'],
+            default: ""
         },
 
         picture: {
             type: String,
+            default: ""
         },
 
         phoneNumber: {
             type: String,
+            default: ""
         },
 
         description: {
             type: String,
+            default: ""
         },
 
         price: {
@@ -49,12 +54,13 @@ const eventSchema = new Schema(
 
         date: {
             type: Date,
+            default:""
             // required: [true, "Date is required."],
         },
 
-        adress: {
+        address: {
             type: String,
-            required: false
+            default: ""
         },
 
 
