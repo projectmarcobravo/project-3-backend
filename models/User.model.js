@@ -54,7 +54,7 @@ const userSchema = new Schema(
     favoriteClass: [{ type: Schema.Types.ObjectId, ref: 'Classes' }],
     sale: [{ type: Schema.Types.ObjectId, ref: 'Sale' }],
     event: [{ type: Schema.Types.ObjectId, ref: 'Event' }],
-    class: [{ type: Schema.Types.ObjectId, ref: 'Class' }],
+    classes: [{ type: Schema.Types.ObjectId, ref: 'Classes' }],
     rate: {
       type: Number, min: 0, max: 5
     },

@@ -36,9 +36,9 @@ const classesSchema = new Schema(
             type: Schema.Types.ObjectId, ref:"Favorite",
         },
 
-        coordinates: {
-            type: Array,
-            default: []
+        adress: {
+            type: String,
+            required: false
         },
 
         level: {

@@ -10,40 +10,44 @@ const Classes = require('../models/Classes.model')
 
 
 
-// router.post("/profile/:userId", isAuthenticated, async (req, res) => {
-//     const { favorite } = req.body
-//     const userId = req.payload._id
+ router.post("/addInstrument/:instrumentId", isAuthenticated, async (req, res) => {
+     const { instrumentId } = req.params
+     const userId = req.payload._id
  
-//     try {
-//        const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favorite: newInstrument._id } })//NEED TO UPDATEALL
-//        res.json(newInstrument)//THIS IS ONLY TO SEE THE INFO
-//     } catch (error) {
-//        res.json(error)
-//     }
-//  })
+     try {
+        const instrument = await Sale.findById(instrumentId)
+        const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favoriteSale: instrument._id } })
+        res.json(instrument._id)
+     } catch (error) {
+        res.json(error)
+     }
+  })
 
-//  router.post("/profile/:userId", isAuthenticated, async (req, res) => {
-//     const { city, price, instruments, description, photo } = req.body
-//     const userId = req.payload._id
- 
-//     try {
-//        const newInstrument = await Sale.create({ city, price, instruments, description, photo, creator: userId })
-//        const userUpdate = await User.findByIdAndUpdate(userId, { $push: { sale: newInstrument._id } })//NEED TO UPDATEALL
-//        res.json(newInstrument)//THIS IS ONLY TO SEE THE INFO
-//     } catch (error) {
-//        res.json(error)
-//     }
-//  })
+  router.post("/addEvent/:eventId", isAuthenticated, async (req, res) => {
+    const { eventId } = req.params
+    const userId = req.payload._id
 
-//  router.post("/profile/:userId", isAuthenticated, async (req, res) => {
-//     const { city, price, instruments, description, photo } = req.body
-//     const userId = req.payload._id
- 
-//     try {
-       
-//     } catch (error) {
-//        res.json(error)
-//     }
-//  })
+    try {
+       const event = await Event.findById(eventId)
+       const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favoriteEvent: event._id } })
+       res.json(event._id)
+    } catch (error) {
+       res.json(error)
+    }
+ })
+
+ router.post("/addClass/:classId", isAuthenticated, async (req, res) => {
+    const { classId } = req.params
+    const userId = req.payload._id
+
+    try {
+       const klass = await Classes.findById(classId)
+       const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favoriteClass: klass._id } })
+       res.json(klass._id)
+    } catch (error) {
+       res.json(error)
+    }
+ })
+
 
  module.exports = router

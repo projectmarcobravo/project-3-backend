@@ -34,8 +34,7 @@ const usersRoutes = require("./routes/users.routes");
 app.use("/api/v1/users", usersRoutes);
 
 const favoritesRoutes = require("./routes/favorites.routes");
-app.use("/api/v1/users", favoritesRoutes);//TOMORROW ASK IF USERS STAYS OR CHNAGE NAE TO FAVORITES
-
+app.use("/api/v1/favorites", favoritesRoutes);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require("./error-handling")(app);

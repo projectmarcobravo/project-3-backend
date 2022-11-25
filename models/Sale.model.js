@@ -28,10 +28,10 @@ const saleSchema = new Schema({
         type:String,
         required: true,
     },
-    coordinate: 
+    adress: 
     {
-        type:Array,
-        default: []
+        type: String,
+        required: false
     }, 
     picture: {
         type: String
