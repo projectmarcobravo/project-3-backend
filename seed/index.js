@@ -128,6 +128,7 @@ const createSeeds = async function () {
          {
             title: "Paino Lessons",
             creator: dbUser[0],
+            description: "I've been teaching Piano since 2010's. More than 200 students are happy with my metodology",
             instruments: 'Piano',
             price: 25,
             level: "Beginner",
@@ -135,6 +136,7 @@ const createSeeds = async function () {
          {
             title: "Paino Lessons",
             creator: dbUser[1],
+            description: "I've been a professional pianist and now I want to teach to the new generation this amazing instrument!",
             instruments: 'Piano',
             price: 50,
             level: "Advanced",
@@ -142,6 +144,7 @@ const createSeeds = async function () {
          {
             title: "Trumpet Lessons",
             creator: dbUser[2],
+            description: "I'm looking to a group of 4 persons that want to learn how to play Trumpet",
             instruments: 'Trumpet',
             price: 30,
             level: "Advanced",
