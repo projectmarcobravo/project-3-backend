@@ -94,26 +94,29 @@ const createSeeds = async function () {
 
       const sales = [
          {
+            title: "Used Guitar",
             creator: dbUser[0]._id,
             city: "Barcelona",
             price: 500,
-            instrument: "Guitar",
+            instruments: "Guitar",
             description: "Classic Gibson, in perfect conditions.",
             photo: "https://i.etsystatic.com/20421188/r/il/535720/2226638036/il_570xN.2226638036_d419.jpg"
          },
          {
+            title: "Used Drumset",
             creator: dbUser[1]._id,
             city: "Malaga",
             price: 700,
-            instrument: "Drums",
+            instruments: "Drums",
             description: "Drums in good condition. Wanted to get rid of it, since it is from my ex.",
             photo: "https://musicopolix.com/blog/wp-content/uploads/2022/01/las-5-mejores-baterias-para-ninos-bonitas.png",
          },
          {
+            title: "Used Microphone",
             creator: dbUser[2]._id,
             city: "Madrid",
             price: 200,
-            instrument: "microphone",
+            instruments: "microphone",
             description: "A high quality microphone.",
             photo: "https://vintageking.com/wp/wp-content/uploads/BestSellingMicrophones2018.jpg",
          }
@@ -123,18 +126,21 @@ const createSeeds = async function () {
 
       const classe = [
          {
+            title: "Paino Lessons",
             creator: dbUser[0],
             instruments: 'Piano',
             price: 25,
             level: "Beginner",
          },
          {
+            title: "Paino Lessons",
             creator: dbUser[1],
             instruments: 'Piano',
             price: 50,
             level: "Advanced",
          },
          {
+            title: "Trumpet Lessons",
             creator: dbUser[2],
             instruments: 'Trumpet',
             price: 30,

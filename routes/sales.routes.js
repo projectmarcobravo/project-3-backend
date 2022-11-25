@@ -8,11 +8,11 @@ const { isAuthenticated } = require("../middleware/jwt.middleware.js");
 const User = require("../models/User.model");
 
 router.post("/instrument", isAuthenticated, async (req, res) => {
-   const { city, price, instruments, description, photo } = req.body
+   const { city, price, instruments, description, photo, title } = req.body
    const userId = req.payload._id
 
    try {
-      const newInstrument = await Sale.create({ city, price, instruments, description, photo, creator: userId })
+      const newInstrument = await Sale.create({ title, city, price, instruments, description, photo, creator: userId })
       const userUpdate = await User.findByIdAndUpdate(userId, { $push: { sale: newInstrument._id } })//NEED TO UPDATEALL
       res.json(newInstrument)//THIS IS ONLY TO SEE THE INFO
    } catch (error) {

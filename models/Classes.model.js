@@ -25,7 +25,7 @@ const classesSchema = new Schema(
 
         description: {
             type: String,
-            required: true
+            required: false
         },
 
         creator: {

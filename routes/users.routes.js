@@ -16,17 +16,17 @@ router.get("/profile", isAuthenticated, async (req, res)=> {
  })
 module.exports = router
 
-// router.get("/profile/:userId", async (req, res)=> {
-//     const { userId } = req.params
-//     try {
-//        const userDB = await User.findById(userId).populate("sale event classes")
-//        console.log(userDB)
-//        res.json(userDB)
-//     } catch (error) {
-//        res.json(error)
-//     }
-//  })
-// module.exports = router
+ router.get("/profile/:userId", async (req, res)=> {
+     const { userId } = req.params
+     try {
+        const userDB = await User.findById(userId).populate("sale event classes")
+        console.log(userDB)
+        res.json(userDB)
+     } catch (error) {
+        res.json(error)
+     }
+  })
+ module.exports = router
 
 router.put("/profile/edit", isAuthenticated, async (req, res) => {
     const  userId = req.payload._id

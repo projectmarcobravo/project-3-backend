@@ -42,8 +42,8 @@ const Classes = require('../models/Classes.model')
 
     try {
        const klass = await Classes.findById(classId)
-       const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favoriteEvent: event._id } })
-       res.json(event._id)
+       const userUpdate = await User.findByIdAndUpdate(userId, { $push: { favoriteClass: klass._id } })
+       res.json(klass._id)
     } catch (error) {
        res.json(error)
     }
