@@ -15,7 +15,8 @@ const classesSchema = new Schema(
         },
 
         picture: {
-            type: String
+            type: String,
+            default: ""
         },
 
         price: {
@@ -36,9 +37,9 @@ const classesSchema = new Schema(
             type: Schema.Types.ObjectId, ref:"Favorite",
         },
 
-        adress: {
+        address: {
             type: String,
-            required: false
+            default: ""
         },
 
         level: {
