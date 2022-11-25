@@ -3,17 +3,20 @@ const router = express.Router()
 const mongoose = require("mongoose");
 const errorHandling = require("../error-handling");
 const { isAuthenticated } = require("../middleware/jwt.middleware");
+const User = require("../models/User.model");
 
 const Event = require("../models/Events.model")
 
 router.post("/create", isAuthenticated, async (req, res) => {
     const userId = req.payload._id
     console.log(req.payload)
+    
     const { title, creator, typeOfEvent, style, instruments, 
         picture, phoneNumber, description, price, coordinates, date } = req.body
    try {
       const newEvent = await Event.create({title, creator: userId , typeOfEvent, style, instruments, 
         picture, phoneNumber, description, price, coordinates, date})
+      const userUpdate = await User.findByIdAndUpdate(userId, { $push: { event: newEvent._id } })//NEED TO UPDATEALL
       res.json(newEvent)
    } catch (error) {
       console.log(error)
@@ -22,7 +25,7 @@ router.post("/create", isAuthenticated, async (req, res) => {
 
 router.get("/", async (req, res)=> {
    try {
-      const eventsDb = await Event.find().populate("tasks")
+      const eventsDb = await Event.find().populate("creator")
       res.json(eventsDb)
    } catch (error) {
       res.json(error)
@@ -32,7 +35,7 @@ router.get("/", async (req, res)=> {
 router.get("/:eventId", async (req, res) => {
    const { eventId } = req.params
    try {
-      const eventsDb = await Event.findById(eventId).populate("tasks")
+      const eventsDb = await Event.findById(eventId).populate("creator")
       res.json(eventsDb)
    } catch (error) {
       res.json(error)
