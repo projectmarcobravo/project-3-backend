@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const User = require("../models/User.model");
 
 const Classes = require('../models/Classes.model')
 const { isAuthenticated } = require('../middleware/jwt.middleware')
@@ -18,7 +19,7 @@ router.get('/classes', async (req, res) => {
 router.get('/classes/:classId', async (req, res) => {
     const { classId } = req.params 
     try {
-        const classesDb = await Classes.findById(classId).populate()
+        const classesDb = await Classes.findById(classId).populate('creator')
         res.json(classesDb)
     } catch (error) {
         console.log(error)
@@ -31,6 +32,7 @@ router.post('/classes', isAuthenticated, async (req, res) => {
     const userId = req.payload._id
     try {
         const classes = await Classes.create({instruments, price, level, creator: userId})
+        const userUpdate = await User.findByIdAndUpdate(userId, { $push: { class: classes._id } })//NEED TO UPDATEALL
         res.json(classes)
     } catch (error) {
         console.log(error)

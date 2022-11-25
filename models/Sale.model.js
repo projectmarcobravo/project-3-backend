@@ -10,10 +10,10 @@ const saleSchema = new Schema({
 
     price: {
         type:Number,
-        required:true
+        // required:true
      }, //ASK IF ITS NUMBER IS OK OR WE NEED TO SPECIFY INTEGER FLOAT ?
 
-    instrument: {
+    instruments: {
         type: String,
         required: true,
         enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
