@@ -38,7 +38,7 @@ router.get("/:eventId", async (req, res) => {
       const eventsDb = await Event.findById(eventId).populate("creator")
       res.json(eventsDb)
    } catch (error) {
-      res.json(error)
+      console.log(error)
    }
 })
 
