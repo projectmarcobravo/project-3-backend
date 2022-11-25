@@ -28,12 +28,12 @@ router.get('/classes/:classId', async (req, res) => {
 
 // POST
 router.post('/classes', isAuthenticated, async (req, res) => {
-    const { instruments, price, level, title, description } = req.body
+    const { instruments, price, level, title, description, picture } = req.body
     const userId = req.payload._id
     try {
-        const classes = await Classes.create({title, instruments, price, level, creator: userId, title, description})
+        const classes = await Classes.create({title, instruments, price, level, creator: userId, title, description, picture})
         const userUpdate = await User.findByIdAndUpdate(userId, { $push: { classes: classes._id } })//NEED TO UPDATEALL
-        res.json(classes)
+        res.json(classes) 
     } catch (error) {
         console.log(error)
     }
