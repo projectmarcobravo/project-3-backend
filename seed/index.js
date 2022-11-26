@@ -294,7 +294,7 @@ const createSeeds = async function () {
             price: 500,
             instruments: "Guitar",
             description: "Classic Gibson, in perfect conditions.",
-            photo: "https://i.etsystatic.com/20421188/r/il/535720/2226638036/il_570xN.2226638036_d419.jpg"
+             picture: "https://i.etsystatic.com/20421188/r/il/535720/2226638036/il_570xN.2226638036_d419.jpg"
          },
 
          {
@@ -304,7 +304,7 @@ const createSeeds = async function () {
             price: 700,
             instruments: "Drums",
             description: "Drums in good condition. Wanted to get rid of it, since it is from my ex.",
-            photo: "https://musicopolix.com/blog/wp-content/uploads/2022/01/las-5-mejores-baterias-para-ninos-bonitas.png",
+             picture: "https://musicopolix.com/blog/wp-content/uploads/2022/01/las-5-mejores-baterias-para-ninos-bonitas.png",
          },
 
          {
@@ -314,7 +314,7 @@ const createSeeds = async function () {
             price: 200,
             instruments: "Microphone",
             description: "A high quality microphone.",
-            photo: "https://vintageking.com/wp/wp-content/uploads/BestSellingMicrophones2018.jpg",
+             picture: "https://vintageking.com/wp/wp-content/uploads/BestSellingMicrophones2018.jpg",
          },
 
          {
@@ -324,7 +324,7 @@ const createSeeds = async function () {
             price: 8000,
             instruments: "Electric Guitar",
             description: "The Craziest Guitar Eveeeer. Don't waste this chance",
-            photo: "https://i.pinimg.com/originals/ee/df/69/eedf696e59f535c1a1348fa5d36304e5.jpg"
+             picture: "https://i.pinimg.com/originals/ee/df/69/eedf696e59f535c1a1348fa5d36304e5.jpg"
          },
 
          {
@@ -334,7 +334,7 @@ const createSeeds = async function () {
             price: 1000,
             instruments: "Drums",
             description: "Just get and play. Special price",
-            photo: "https://cajonflamencosoler.com/wp-content/uploads/2021/09/Modelo-Natura.jpeg"
+             picture: "https://cajonflamencosoler.com/wp-content/uploads/2021/09/Modelo-Natura.jpeg"
          },
 
          {
@@ -344,7 +344,7 @@ const createSeeds = async function () {
             price: 150000,
             instruments: "Violin",
             description: "This collector's item will be yours for a very special price",
-            photo: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/irg1VQBaFB_0/v1/1200x-1.jpg"
+             picture: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/irg1VQBaFB_0/v1/1200x-1.jpg"
          },
 
          {
@@ -354,7 +354,7 @@ const createSeeds = async function () {
             price: 12,
             instruments: "Flute",
             description: "Is perfect!! Approved by Lizzo",
-            photo: "https://dcist.com/wp-content/uploads/sites/3/2022/09/AP19361751316902.jpg"
+             picture: "https://dcist.com/wp-content/uploads/sites/3/2022/09/AP19361751316902.jpg"
          },
 
          {
@@ -364,7 +364,7 @@ const createSeeds = async function () {
             price: 90000,
             instruments: "Guitar",
             description: "The greatest name of Flamenco left this precious item for your. Buy it and make yourself great as him",
-            photo: "https://s1.abcstatics.com/abc/www/multimedia/cultura/2022/07/14/gabriela-canseco-RuQYjlR9LCXqLIyrlRootgM-1240x768@abc.jpg"
+             picture: "https://s1.abcstatics.com/abc/www/multimedia/cultura/2022/07/14/gabriela-canseco-RuQYjlR9LCXqLIyrlRootgM-1240x768@abc.jpg"
          },
 
          {
@@ -374,7 +374,7 @@ const createSeeds = async function () {
             price: 10000,
             instruments: "Trumpet",
             description: "We found this jewel in a pawn house. The owners had no idea it belonged to one of the best of our time",
-            photo: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/louis-armstrong-1651141819.png"
+             picture: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/louis-armstrong-1651141819.png"
          },
 
          {
@@ -384,7 +384,7 @@ const createSeeds = async function () {
             price: 900,
             instruments: "Harp",
             description: "The best opportunity to get an authentic harp in perfect conditions",
-            photo: "https://images.squarespace-cdn.com/content/v1/5552b652e4b03e678d3faefd/1631796978519-WJBKWMO7LNPRHPBII83X/Close+up+Prod+eyes+down.jpg"
+             picture: "https://images.squarespace-cdn.com/content/v1/5552b652e4b03e678d3faefd/1631796978519-WJBKWMO7LNPRHPBII83X/Close+up+Prod+eyes+down.jpg"
          },
       ]
       const dbSale = await Sale.create(sales)
