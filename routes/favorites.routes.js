@@ -9,7 +9,17 @@ const Event = require("../models/Events.model")
 const Classes = require('../models/Classes.model')
 
 
+// GET
+   router.get('/favorites', async (req, res) => {
+      try {
+         const dbFavorites = await Classes.find().populate('classes')
+         res.json(dbFavorites)
+      } catch (error) { 
+         console.log(error)
+      }
+   })
 
+// POST
  router.post("/addInstrument/:instrumentId", isAuthenticated, async (req, res) => {
      const { instrumentId } = req.params
      const userId = req.payload._id
