@@ -9,7 +9,6 @@ const Event = require("../models/Events.model")
 
 router.post("/create", isAuthenticated, async (req, res) => {
     const userId = req.payload._id
-    console.log(req.payload)
     
     const { title, creator, typeOfEvent, style, instruments, 
         picture, phoneNumber, description, price, coordinates, date } = req.body
@@ -46,18 +45,19 @@ router.put("/:eventId", async (req, res) => {
    const { eventId } = req.params
    const eventUpdate = req.body
    try {
-      const eventsDb = await Project.findByIdAndUpdate(eventId, eventUpdate)
+      const eventsDb = await Event.findByIdAndUpdate(eventId, eventUpdate)
       res.json(eventsDb)
    } catch (error) {
       res.json(error)
    }
 })
 
+
 router.delete("/:eventId", async (req, res) => {
    const { eventId } = req.params
    try {
       const eventDeleted = await Event.findByIdAndRemove(eventId)
-      res.json({ message: `event with id ${eventDeleted} was deleted`})
+      res.json(eventDeleted)
    } catch (error) {
       res.json(error)
    }

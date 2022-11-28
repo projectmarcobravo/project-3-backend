@@ -15,21 +15,19 @@ const eventSchema = new Schema(
         typeOfEvent: {
             type: String,
             required: [true, "Type of event is required"],
-            enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"
-            ]
+            enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"]
         },
 
         style: {
             type: String,
-            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance",],
-            default: ""
+            enum: ["Dance", "Folk", "Bachata", "Rock", "Reggaeton", "Rap", "Flamenco", "Classic", "Tango", "Indie","Trap", "Pop", "Electronic", "Blues", "Punk", "Jazz", "Techno", "Choir", "Trance"],
         },
 
         instruments: {
             type: String,
             enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
                 'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'Microphone'],
-            default: ""
+
         },
 
         picture: {
@@ -38,7 +36,7 @@ const eventSchema = new Schema(
         },
 
         phoneNumber: {
-            type: String,
+            type: Number,
             default: ""
         },
 
