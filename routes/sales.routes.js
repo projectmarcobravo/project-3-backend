@@ -49,8 +49,8 @@ router.put("/instrument/:instrumentId", async (req, res) => {
 router.delete("/instrument/:instrumentId", async (req, res) => {
    const { instrumentId } = req.params
    try {
-      const instrumentDeleted = await Project.findByIdAndRemove(instrumentId)
-      res.json({ message: `instrument for sale with id ${projectDeleted._id} was deleted` })
+      const instrumentDeleted = await Sale.findByIdAndRemove(instrumentId)
+      res.json({ message: `instrument for sale with id ${instrumentDeleted._id} was deleted` })
    } catch (error) {
       res.json(error)
    }
