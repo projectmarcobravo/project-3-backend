@@ -28,9 +28,49 @@ const userSchema = new Schema(
       type: String,
       default: "https://imgv3.fotor.com/images/blog-cover-image/10-profile-picture-ideas-to-make-you-stand-out.jpg"
     },
-    presentationCard: {
-      type: [String],
+    presentationCardSpotify: {
+      type: String,
       trim: true,
+      default: ""
+    },
+    presentationCardYouTube: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardSoundCloud: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardiTunes: {
+      type: String,
+      trim: true,
+      default: ""
+    },presentationCardOther: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardFacebook: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardInstagram: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardLinkedIn: {
+      type: String,
+      trim: true,
+      default: ""
+    },
+    presentationCardTwitter: {
+      type: String,
+      trim: true,
+      default: ""
     },
     telephone: {
       type: String,
