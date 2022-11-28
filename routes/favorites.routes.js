@@ -10,14 +10,16 @@ const Classes = require('../models/Classes.model')
 
 
 // GET
-   router.get('/favorites', async (req, res) => {
+   router.get('/favorites', isAuthenticated, async (req, res) => {
+      const userId = req.payload._id
+
       try {
-         const dbFavorites = await Classes.find().populate('classes')
+         const dbFavorites = await User.findById(userId).populate('favoriteClass favoriteEvent favoriteSale')
          res.json(dbFavorites)
-      } catch (error) { 
+      } catch (error) {
          console.log(error)
       }
-   })
+   }) 
 
 // POST
  router.post("/addInstrument/:instrumentId", isAuthenticated, async (req, res) => {
