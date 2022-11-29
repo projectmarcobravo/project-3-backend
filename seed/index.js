@@ -34,20 +34,23 @@ const createSeeds = async function () {
             email: "mati@bishop.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Trumpet",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53GA9SGZDtClmiT_kV6iDMswsv9-ropI2Ng&usqp=CAU"
          },
          {
             name: "Jose Maria Perez-Hita Freitas",
             username: "messismo",
             email: "JM@PH.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Saxophone"
+            instruments: "Saxophone",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfv18HCAeQxJKkGQYHQIoqPTjlyxENgwRUMA&usqp=CAU"
          },
          {
             name: "Marco Bravo",
             username: "bravco",
             email: "marco@bravo.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Ukelele"
+            instruments: "Ukelele",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSq2YjGwdejWupDJyX1cWQ23EQ2-pxcBryw&usqp=CAU"
          },
 
          {
@@ -55,7 +58,9 @@ const createSeeds = async function () {
             username: "DiosMessi",
             email: "agustin@marcote.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Accordion"
+            instruments: "Accordion",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhZrS3CjJUbvLCotCQiSObCyITV4Uxj9pIw&usqp=CAU"
+            
          },
          
          {
@@ -63,7 +68,8 @@ const createSeeds = async function () {
             username: "Paul",
             email: "paul@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Electric Guitar"
+            instruments: "Electric Guitar",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGMajZld2uKa7-X6LyghzSVqeYALoGfW41Tw&usqp=CAU"
          },
 
          {
@@ -71,7 +77,8 @@ const createSeeds = async function () {
             username: "John",
             email: "john@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Electric Guitar"
+            instruments: "Electric Guitar",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LT79dNPkQitqVmd4gMx0KMitToPv7-cbHw&usqp=CAU"
          },
 
          {
@@ -79,7 +86,8 @@ const createSeeds = async function () {
             username: "Ringo",
             email: "ringo@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Drums"
+            instruments: "Drums",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqZPRbaAHs1B81rGGgd1l49nAglQ6ogtbMQ&usqp=CAU"
          },
 
          {
@@ -87,7 +95,8 @@ const createSeeds = async function () {
             username: "George",
             email: "george@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Electric Guitar"
+            instruments: "Electric Guitar",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqZPRbaAHs1B81rGGgd1l49nAglQ6AU"
          },
 
          {
@@ -95,28 +104,32 @@ const createSeeds = async function () {
             username: "Slash",
             email: "slash  @guns.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Electric Guitar"
+            instruments: "Electric Guitar",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtoXX4PZ2aytoqUAkc7VA1WZxvmdU553r1A&usqp=CAU"
          },
 {
             name: "Adele Laurie Blue Adkins",
             username: "Adele",
             email: "adele@hello.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Microphone"
+            instruments: "Microphone",
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3POQDmgIqIykSoH_jyJtVgTI8kDbPvz9LDg&usqp=CAU"
          },
          {
             name: "Angus McKinnon Young",
             username: "Angus",
             email: "angus@tnt.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Electric Guitar"
+            instruments: "Electric Guitar",
+            picture:"https://www.thefamouspeople.com/profiles/images/angus-young-6.jpg"
          },
          {
             name: "David Eric Grohl",
             username: "Dave",
             email: "david@foo.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Drums"
+            instruments: "Drums",
+            picture:"https://mir-s3-cdn-cf.behance.net/projects/404/19594953.548fa84c84c0f.jpg"
          },
 
 
@@ -125,7 +138,8 @@ const createSeeds = async function () {
             username: "Aoki",
             email: "aoki@dj.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "DJ"
+            instruments: "DJ",
+            picture:"https://www.internationalmusicsummit.com/wp-content/uploads/2015/09/Steve-Aoki-Rectangle-800x500.jpg"
          },
 
 
@@ -398,6 +412,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 25,
             level: "Beginner",
+            picture:"https://www.skoove.com/blog/wp-content/uploads/2021/05/download-1-1024x576.jpeg"
          },
          {
             title: "Piano Lessons",
@@ -406,6 +421,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 50,
             level: "Advanced",
+            picture:"https://perfectpraisemusic.com/wp-content/uploads/2018/03/good-fingering2-scaled.jpg"
          },
          {
             title: "Trumpet Lessons",
@@ -414,6 +430,7 @@ const createSeeds = async function () {
             instruments: 'Trumpet',
             price: 30,
             level: "Advanced",
+            picture:"https://d10j3mvrs1suex.cloudfront.net/u/408153/ec8d3a4297478c7a3bfaa9265a2d345e4953dc67/large/4.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
          },
          {
             title: "DJ Lessons",
@@ -422,6 +439,7 @@ const createSeeds = async function () {
             instruments: 'DJ',
             price: 30,
             level: "Advanced",
+            picture:"https://images.squarespace-cdn.com/content/v1/570ad1a09f726623e0c9462e/1502300355420-298QVHP6KWBTJZOYGZ2F/DJ-Courses-Online-DJ-School.jpg?format=2500w"
          },
          {
             title: "Flute for intermediate students",
@@ -430,6 +448,7 @@ const createSeeds = async function () {
             instruments: 'Flute',
             price: 90,
             level: "Intermediate",
+            picture:"https://www.musicalbri.com/wp-content/uploads/2014/12/flute-lessons.jpg"
          },
          {
             title: "Clarinet for beginners",
@@ -438,6 +457,7 @@ const createSeeds = async function () {
             instruments: 'Clarinet',
             price: 70,
             level: "Beginner",
+            picture:"https://static.wixstatic.com/media/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg/v1/fill/w_640,h_480,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg"
          },
          {
             title: "Banjo like a Boss",
@@ -446,6 +466,7 @@ const createSeeds = async function () {
             instruments: 'Banjo',
             price: 15,
             level: "Advanced",
+            picture:"https://cdn.shopify.com/s/files/1/0204/9822/files/ryan-cavanaugh_2000x.jpg?v=1614379878"
          },
          {
             title: "Take your Piano skills beyond Bohemian Rhapsody",
@@ -454,6 +475,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 90,
             level: "Beginner",
+            picture:"https://www.sinfonicapz.com/wp-content/uploads/2022/04/Por-que-aprender-a-tocar-piano-Conozca-los-beneficios-de-este-instrumento.jpg"
          },
          {
             title: "Be the best of the best",
@@ -462,6 +484,7 @@ const createSeeds = async function () {
             instruments: 'Violin',
             price: 150,
             level: "Advanced",
+            picture:"https://www.fiddleheads.com/pub/media/magefan_blog/violinist_woman_inspecting_violin_shopping_adult-artist-entertainment-936030_blurred.jpg"
          },
          {
             title: "3 Recordings after 20 classes",
@@ -470,6 +493,7 @@ const createSeeds = async function () {
             instruments: 'Saxophone',
             price: 100,
             level: "Intermediate",
+            picture:"https://www.newburysaxschool.co.uk/wp-content/uploads/2020/04/maxresdefault.jpg"
          }
       ]
 
