@@ -15,8 +15,7 @@ const eventSchema = new Schema(
         typeOfEvent: {
             type: String,
             required: [true, "Type of event is required"],
-            enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"
-            ]
+            enum: ["Party", "Concert", "Join a Band", "Hiring a Member", "Jamming"]
         },
 
         style: {
