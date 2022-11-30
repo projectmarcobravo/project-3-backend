@@ -34,20 +34,50 @@ const createSeeds = async function () {
             email: "mati@bishop.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Trumpet",
+            telephone: "34685663926",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
          },
          {
             name: "Jose Maria Perez-Hita Freitas",
             username: "messismo",
             email: "JM@PH.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Saxophone"
+            instruments: "Saxophone",
+            telephone: "34687225861",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
          },
          {
             name: "Marco Bravo",
             username: "bravco",
             email: "marco@bravo.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Ukelele"
+            instruments: "Ukelele",
+            telephone: "34660646710",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
          },
 
          {
@@ -55,7 +85,17 @@ const createSeeds = async function () {
             username: "DiosMessi",
             email: "agustin@marcote.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
-            instruments: "Accordion"
+            instruments: "Accordion",
+            telephone: "34672728948",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
          },
          
          {
@@ -172,6 +212,7 @@ const createSeeds = async function () {
             style: "Rock",
             price: 50,
             date: 12 / 12 / 2022,
+
          },
 
          {
@@ -270,19 +311,20 @@ const createSeeds = async function () {
       ]
       const dbEvent = await Event.create(events)
 
-      // dbEvent.forEach(async (event) => {
 
-      //    const userUpdate = await User.findByIdAndUpdate(event.creator, { $push: { events: event._id } })
-      // })
-
-      const userUpdate2 = await User.findByIdAndUpdate(dbUser[0]._id, { $push: { event: events[0]._id } })
-
-      //   const userUpdate1 = await User.findByIdAndUpdate(dbUser[0]._id,{ $push: { events: event._id } } )
-      const userUpdate = await User.findByIdAndUpdate(dbUser[0]._id,)
-      //console.log(userUpdate1)
-      console.log(dbEvent[0])
-      console.log(userUpdate2)
-
+      const updateUsers = async (event) => {
+         try {
+            await User.findByIdAndUpdate(event.creator, { $push: { event: event._id } })
+            console.log("updated E")
+         } catch (error) {
+            console.log(error)
+         }
+      }
+      
+      dbEvent.forEach((event) => {
+         updateUsers(event)
+         console.log("updated DB E")
+      })
 
 
 
@@ -387,8 +429,25 @@ const createSeeds = async function () {
              picture: "https://images.squarespace-cdn.com/content/v1/5552b652e4b03e678d3faefd/1631796978519-WJBKWMO7LNPRHPBII83X/Close+up+Prod+eyes+down.jpg"
          },
       ]
+
+
       const dbSale = await Sale.create(sales)
 
+      const updateUser = async (event) => {
+         try {
+            await User.findByIdAndUpdate(event.creator, { $push: { sale: event._id } })
+            console.log("updated S")
+         } catch (error) {
+            console.log(error)
+         }
+      }
+      
+      dbSale.forEach((event) => {
+         updateUser(event)
+         console.log("updated DB S")
+      })
+
+      
 
       const classe = [
          {
@@ -476,10 +535,22 @@ const createSeeds = async function () {
       const dbClass = await Classes.create(classe)
 
 
+      const updateUse = async (event) => {
+         try {
+            await User.findByIdAndUpdate(event.creator, { $push: { classes: event._id } })
+            console.log("updated C")
+         } catch (error) {
+            console.log(error)
+         }
+      }
+      
+      dbClass.forEach((event) => {
+         updateUse(event)
+         console.log("updated DB")
+      })
 
 
 
-      const dbClose = await mongoose.connection.close()
       console.log("Seeds created")
    } catch (err) {
       console.log(`Error creating the seeds: ${err}`)
