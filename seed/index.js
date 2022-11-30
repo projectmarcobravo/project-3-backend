@@ -44,7 +44,7 @@ const createSeeds = async function () {
             presentationCardFacebook: "https://www.facebook.com/tiesto/",
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
-            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
 
             picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53GA9SGZDtClmiT_kV6iDMswsv9-ropI2Ng&usqp=CAU"
 
@@ -65,7 +65,7 @@ const createSeeds = async function () {
             presentationCardFacebook: "https://www.facebook.com/tiesto/",
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
-            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
 
             picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfv18HCAeQxJKkGQYHQIoqPTjlyxENgwRUMA&usqp=CAU"
 
@@ -86,7 +86,7 @@ const createSeeds = async function () {
             presentationCardFacebook: "https://www.facebook.com/tiesto/",
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
-            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
 
             picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSq2YjGwdejWupDJyX1cWQ23EQ2-pxcBryw&usqp=CAU"
 
@@ -108,7 +108,7 @@ const createSeeds = async function () {
             presentationCardFacebook: "https://www.facebook.com/tiesto/",
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
-            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
 
             picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhZrS3CjJUbvLCotCQiSObCyITV4Uxj9pIw&usqp=CAU"
             
