@@ -27,14 +27,14 @@ const createSeeds = async function () {
       // console.log("Db clean")
 
       const users = [
-        
+
          {
             name: "Matias Molina Bishop",
             username: "mBishopM",
             email: "mati@bishop.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Trumpet",
-
+            style: "Folk",
             telephone: "34685663926",
             presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
             presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
@@ -45,9 +45,8 @@ const createSeeds = async function () {
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
             presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53GA9SGZDtClmiT_kV6iDMswsv9-ropI2Ng&usqp=CAU"
-
+            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ53GA9SGZDtClmiT_kV6iDMswsv9-ropI2Ng&usqp=CAU",
+            description: "Born in Venezuela, but lived in different continents and countries since a young age. Music is my rythm of life"
          },
          {
             name: "Jose Maria Perez-Hita Freitas",
@@ -55,7 +54,7 @@ const createSeeds = async function () {
             email: "JM@PH.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Saxophone",
-
+            style: "Flamenco",
             telephone: "34687225861",
             presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
             presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
@@ -66,9 +65,8 @@ const createSeeds = async function () {
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
             presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfv18HCAeQxJKkGQYHQIoqPTjlyxENgwRUMA&usqp=CAU"
-
+            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfv18HCAeQxJKkGQYHQIoqPTjlyxENgwRUMA&usqp=CAU",
+            description: "Born in Brazil, but moved to Barcelona, Spain 15 years ago. Love singing on my spare time."
          },
          {
             name: "Marco Bravo",
@@ -76,7 +74,7 @@ const createSeeds = async function () {
             email: "marco@bravo.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Ukelele",
-
+            style: "Trance",
             telephone: "34660646710",
             presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
             presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
@@ -87,9 +85,8 @@ const createSeeds = async function () {
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
             presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSq2YjGwdejWupDJyX1cWQ23EQ2-pxcBryw&usqp=CAU"
-
+            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMSq2YjGwdejWupDJyX1cWQ23EQ2-pxcBryw&usqp=CAU",
+            description: "I love traveling, my must need on my luggage is my guitar. I feel empty without it."
          },
 
          {
@@ -98,7 +95,7 @@ const createSeeds = async function () {
             email: "agustin@marcote.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Accordion",
-
+            style: "Electronic",
             telephone: "34672728948",
             presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
             presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
@@ -109,19 +106,28 @@ const createSeeds = async function () {
             presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
             presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
             presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhZrS3CjJUbvLCotCQiSObCyITV4Uxj9pIw&usqp=CAU"
-            
-
+            picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJhZrS3CjJUbvLCotCQiSObCyITV4Uxj9pIw&usqp=CAU",
+            description: "Never been too interested in music, but always wanted to learned. That is the reason I am here."
          },
-         
+
          {
             name: "James Paul McCartney",
             username: "Paul",
             email: "paul@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGMajZld2uKa7-X6LyghzSVqeYALoGfW41Tw&usqp=CAU"
+            style: "Rock",
+            picture: "https://imgs.smoothradio.com/images/144489?width=3208&crop=1_1&signature=nrDDei-0yPZtAWHn2mfBUJHOUHM=",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            description: "I am the boss.",
          },
 
          {
@@ -130,7 +136,18 @@ const createSeeds = async function () {
             email: "john@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LT79dNPkQitqVmd4gMx0KMitToPv7-cbHw&usqp=CAU"
+            style: "Rock",
+            picture: "https://okdiario.com/img/2017/12/18/john-lennon-e1513589833449.jpg",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            description: "Music is life. Yoko is life. The Beatles are life.",
          },
 
          {
@@ -139,7 +156,19 @@ const createSeeds = async function () {
             email: "ringo@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Drums",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqZPRbaAHs1B81rGGgd1l49nAglQ6ogtbMQ&usqp=CAU"
+            style: "Classic",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture: "https://res.cloudinary.com/jerrick/image/upload/f_jpg,fl_progressive,q_auto,w_1024/fjnwugbhyjisvace9qy9.jpg",
+            description: "Put me sticks on my hand and something amazing will happen.",
+
          },
 
          {
@@ -148,7 +177,18 @@ const createSeeds = async function () {
             email: "george@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmLDu0_sdZETk1ECcw9QesXDuLKRQOrV9Gg&usqp=CAU"
+            style: "Rock",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture: "https://imgs.smoothradio.com/images/209608?width=4024&crop=4_3&signature=OJDhbI1pB6WjqE5EhVgxLRmRaVE=",
+            description: "Music has gave me everything in life. I lived the dream.",
          },
 
          {
@@ -157,15 +197,37 @@ const createSeeds = async function () {
             email: "slash  @guns.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhtoXX4PZ2aytoqUAkc7VA1WZxvmdU553r1A&usqp=CAU"
+            style: "Rock",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture: "https://media.gettyimages.com/id/154478160/es/foto/slash-performs-at-le-zenith-on-october-20-2012-in-paris-france.jpg?s=612x612&w=gi&k=20&c=wsMaQIuW4ZX8jtm87Z64rO-KZaLG62bRCW0J2REzSRA=",
+            description: "Nothing like touching my guitar. I have a special connection."
          },
-{
+         {
             name: "Adele Laurie Blue Adkins",
             username: "Adele",
             email: "adele@hello.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Microphone",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3POQDmgIqIykSoH_jyJtVgTI8kDbPvz9LDg&usqp=CAU"
+            style: "Pop",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture:"https://upload.wikimedia.org/wikipedia/commons/5/52/Adele_for_Vogue_in_2021.png",
+            description: "An english normal girl who loves singing and makiing other people have a good time."
          },
          {
             name: "Angus McKinnon Young",
@@ -173,7 +235,18 @@ const createSeeds = async function () {
             email: "angus@tnt.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://www.thefamouspeople.com/profiles/images/angus-young-6.jpg"
+            style: "Rock",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture:"https://www.xlsemanal.com/wp-content/uploads/sites/3/2020/11/angus-young-el-mundo-no-necesita-una-balada-de-acdc-7-768x506.jpg",
+            description: "Whenever I die, I want to be burried with my guitar next to me.",
          },
          {
             name: "David Eric Grohl",
@@ -181,7 +254,18 @@ const createSeeds = async function () {
             email: "david@foo.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Drums",
-            picture:"https://mir-s3-cdn-cf.behance.net/projects/404/19594953.548fa84c84c0f.jpg"
+            style: "Rock",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture:"https://assets.medpagetoday.net/media/images/97xxx/97588.jpg",
+            description: "Love to feel the connection with the crowd. The fans are awesome."
          },
 
 
@@ -191,7 +275,18 @@ const createSeeds = async function () {
             email: "aoki@dj.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "DJ",
-            picture:"https://www.internationalmusicsummit.com/wp-content/uploads/2015/09/Steve-Aoki-Rectangle-800x500.jpg"
+            style: "Electronic",
+            presentationCardSpotify: "https://open.spotify.com/artist/0bqlm5tlTnZIzpbQKi3MsX",
+            presentationCardYouTube: "https://www.youtube.com/channel/UCc4K7bAqpdBP8jh1j9XZAww",
+            presentationCardSoundCloud: "https://soundcloud.com/tiesto",
+            presentationCardiTunes: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardOther: "https://music.apple.com/us/artist/ti%C3%ABsto/4091218",
+            presentationCardFacebook: "https://www.facebook.com/tiesto/",
+            presentationCardInstagram: "https://www.instagram.com/tiesto/?hl=en",
+            presentationCardLinkedIn: "https://www.linkedin.com/in/agustin-marcote-ba0aa9221/",
+            presentationCardTwitter: "https://twitter.com/tiesto?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+            picture:"https://cdns-images.dzcdn.net/images/artist/0383b9ee7f3d44c3bf84d9401189458e/500x500.jpg",
+            description: "who wanna have a pie smashed to his face?",
          },
 
 
@@ -346,7 +441,7 @@ const createSeeds = async function () {
             console.log(error)
          }
       }
-      
+
       dbEvent.forEach((event) => {
          updateUsers(event)
          console.log("updated DB E")
@@ -362,7 +457,7 @@ const createSeeds = async function () {
             price: 500,
             instruments: "Guitar",
             description: "Classic Gibson, in perfect conditions.",
-             picture: "https://cdn.shopify.com/s/files/1/0343/4368/2183/products/fender-electric-guitars-solid-body-fender-custom-shop-figured-mahogany-stratocaster-natural-2018-u4102513801-29679126413447_2566x.jpg?v=1663015819"
+            picture: "https://cdn.shopify.com/s/files/1/0343/4368/2183/products/fender-electric-guitars-solid-body-fender-custom-shop-figured-mahogany-stratocaster-natural-2018-u4102513801-29679126413447_2566x.jpg?v=1663015819"
          },
 
          {
@@ -372,7 +467,7 @@ const createSeeds = async function () {
             price: 700,
             instruments: "Drums",
             description: "Drums in good condition. Wanted to get rid of it, since it is from my ex.",
-             picture: "https://musicopolix.com/blog/wp-content/uploads/2022/01/las-5-mejores-baterias-para-ninos-bonitas.png",
+            picture: "https://musicopolix.com/blog/wp-content/uploads/2022/01/las-5-mejores-baterias-para-ninos-bonitas.png",
          },
 
          {
@@ -382,7 +477,7 @@ const createSeeds = async function () {
             price: 200,
             instruments: "Microphone",
             description: "A high quality microphone.",
-             picture: "https://vintageking.com/wp/wp-content/uploads/BestSellingMicrophones2018.jpg",
+            picture: "https://vintageking.com/wp/wp-content/uploads/BestSellingMicrophones2018.jpg",
          },
 
          {
@@ -392,7 +487,7 @@ const createSeeds = async function () {
             price: 800,
             instruments: "Electric Guitar",
             description: "The Craziest Guitar Eveeeer. Don't waste this chance",
-             picture: "https://cdn11.bigcommerce.com/s-n9l2n2/images/stencil/1280x1280/products/87064/512596/DSC_5110__63928.1665594846.jpg?c=2"
+            picture: "https://cdn11.bigcommerce.com/s-n9l2n2/images/stencil/1280x1280/products/87064/512596/DSC_5110__63928.1665594846.jpg?c=2"
          },
 
          {
@@ -402,7 +497,7 @@ const createSeeds = async function () {
             price: 1000,
             instruments: "Drums",
             description: "Just get and play. Special price",
-             picture: "http://cdn.shopify.com/s/files/1/0343/4368/2183/products/pearl-drums-and-percussion-acoustic-drums-full-acoustic-kits-pearl-session-studio-select-13-16-18-24-4pc-drum-kit-nicotine-white-marine-pearl-sts944xp-c405-29171733659783_grande.jpg?v=1649967797"
+            picture: "http://cdn.shopify.com/s/files/1/0343/4368/2183/products/pearl-drums-and-percussion-acoustic-drums-full-acoustic-kits-pearl-session-studio-select-13-16-18-24-4pc-drum-kit-nicotine-white-marine-pearl-sts944xp-c405-29171733659783_grande.jpg?v=1649967797"
          },
 
          {
@@ -412,7 +507,7 @@ const createSeeds = async function () {
             price: 150000,
             instruments: "Violin",
             description: "This collector's item will be yours for a very special price",
-             picture: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/irg1VQBaFB_0/v1/1200x-1.jpg"
+            picture: "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/irg1VQBaFB_0/v1/1200x-1.jpg"
          },
 
          {
@@ -422,7 +517,7 @@ const createSeeds = async function () {
             price: 12,
             instruments: "Flute",
             description: "Is perfect!! Approved by Lizzo",
-             picture: "https://dcist.com/wp-content/uploads/sites/3/2022/09/AP19361751316902.jpg"
+            picture: "https://dcist.com/wp-content/uploads/sites/3/2022/09/AP19361751316902.jpg"
          },
 
          {
@@ -432,7 +527,7 @@ const createSeeds = async function () {
             price: 90000,
             instruments: "Guitar",
             description: "The greatest name of Flamenco left this precious item for your. Buy it and make yourself great as him",
-             picture: "https://s1.abcstatics.com/abc/www/multimedia/cultura/2022/07/14/gabriela-canseco-RuQYjlR9LCXqLIyrlRootgM-1240x768@abc.jpg"
+            picture: "https://s1.abcstatics.com/abc/www/multimedia/cultura/2022/07/14/gabriela-canseco-RuQYjlR9LCXqLIyrlRootgM-1240x768@abc.jpg"
          },
 
          {
@@ -442,7 +537,7 @@ const createSeeds = async function () {
             price: 10000,
             instruments: "Trumpet",
             description: "We found this jewel in a pawn house. The owners had no idea it belonged to one of the best of our time",
-             picture: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/louis-armstrong-1651141819.png"
+            picture: "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/louis-armstrong-1651141819.png"
          },
 
          {
@@ -452,7 +547,7 @@ const createSeeds = async function () {
             price: 900,
             instruments: "Harp",
             description: "The best opportunity to get an authentic harp in perfect conditions",
-             picture: "https://images.squarespace-cdn.com/content/v1/5552b652e4b03e678d3faefd/1631796978519-WJBKWMO7LNPRHPBII83X/Close+up+Prod+eyes+down.jpg"
+            picture: "https://images.squarespace-cdn.com/content/v1/5552b652e4b03e678d3faefd/1631796978519-WJBKWMO7LNPRHPBII83X/Close+up+Prod+eyes+down.jpg"
          },
       ]
 
@@ -467,13 +562,13 @@ const createSeeds = async function () {
             console.log(error)
          }
       }
-      
+
       dbSale.forEach((event) => {
          updateUser(event)
          console.log("updated DB S")
       })
 
-      
+
 
       const classe = [
          {
@@ -483,7 +578,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 25,
             level: "Beginner",
-            picture:"https://www.skoove.com/blog/wp-content/uploads/2021/05/download-1-1024x576.jpeg"
+            picture: "https://www.skoove.com/blog/wp-content/uploads/2021/05/download-1-1024x576.jpeg"
          },
          {
             title: "Piano Lessons",
@@ -492,7 +587,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 50,
             level: "Advanced",
-            picture:"https://perfectpraisemusic.com/wp-content/uploads/2018/03/good-fingering2-scaled.jpg"
+            picture: "https://perfectpraisemusic.com/wp-content/uploads/2018/03/good-fingering2-scaled.jpg"
          },
          {
             title: "Trumpet Lessons",
@@ -501,7 +596,7 @@ const createSeeds = async function () {
             instruments: 'Trumpet',
             price: 30,
             level: "Advanced",
-            picture:"https://d10j3mvrs1suex.cloudfront.net/u/408153/ec8d3a4297478c7a3bfaa9265a2d345e4953dc67/large/4.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
+            picture: "https://d10j3mvrs1suex.cloudfront.net/u/408153/ec8d3a4297478c7a3bfaa9265a2d345e4953dc67/large/4.jpg/!!/meta%3AeyJzcmNCdWNrZXQiOiJiemdsZmlsZXMifQ%3D%3D.jpg"
          },
          {
             title: "DJ Lessons",
@@ -510,7 +605,7 @@ const createSeeds = async function () {
             instruments: 'DJ',
             price: 30,
             level: "Advanced",
-            picture:"https://images.squarespace-cdn.com/content/v1/570ad1a09f726623e0c9462e/1502300355420-298QVHP6KWBTJZOYGZ2F/DJ-Courses-Online-DJ-School.jpg?format=2500w"
+            picture: "https://images.squarespace-cdn.com/content/v1/570ad1a09f726623e0c9462e/1502300355420-298QVHP6KWBTJZOYGZ2F/DJ-Courses-Online-DJ-School.jpg?format=2500w"
          },
          {
             title: "Flute for intermediate students",
@@ -519,7 +614,7 @@ const createSeeds = async function () {
             instruments: 'Flute',
             price: 90,
             level: "Intermediate",
-            picture:"https://www.musicalbri.com/wp-content/uploads/2014/12/flute-lessons.jpg"
+            picture: "https://www.musicalbri.com/wp-content/uploads/2014/12/flute-lessons.jpg"
          },
          {
             title: "Clarinet for beginners",
@@ -528,7 +623,7 @@ const createSeeds = async function () {
             instruments: 'Clarinet',
             price: 70,
             level: "Beginner",
-            picture:"https://static.wixstatic.com/media/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg/v1/fill/w_640,h_480,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg"
+            picture: "https://static.wixstatic.com/media/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg/v1/fill/w_640,h_480,al_l,q_80,usm_0.66_1.00_0.01,enc_auto/e398bd_6e4c9a58cccd4ae1b73668aa6149c9c4~mv2.jpg"
          },
          {
             title: "Banjo like a Boss",
@@ -537,7 +632,7 @@ const createSeeds = async function () {
             instruments: 'Banjo',
             price: 15,
             level: "Advanced",
-            picture:"https://cdn.shopify.com/s/files/1/0204/9822/files/ryan-cavanaugh_2000x.jpg?v=1614379878"
+            picture: "https://cdn.shopify.com/s/files/1/0204/9822/files/ryan-cavanaugh_2000x.jpg?v=1614379878"
          },
          {
             title: "Take your Piano skills beyond Bohemian Rhapsody",
@@ -546,7 +641,7 @@ const createSeeds = async function () {
             instruments: 'Piano',
             price: 90,
             level: "Beginner",
-            picture:"https://www.sinfonicapz.com/wp-content/uploads/2022/04/Por-que-aprender-a-tocar-piano-Conozca-los-beneficios-de-este-instrumento.jpg"
+            picture: "https://www.sinfonicapz.com/wp-content/uploads/2022/04/Por-que-aprender-a-tocar-piano-Conozca-los-beneficios-de-este-instrumento.jpg"
          },
          {
             title: "Be the best of the best",
@@ -555,7 +650,7 @@ const createSeeds = async function () {
             instruments: 'Violin',
             price: 150,
             level: "Advanced",
-            picture:"https://www.fiddleheads.com/pub/media/magefan_blog/violinist_woman_inspecting_violin_shopping_adult-artist-entertainment-936030_blurred.jpg"
+            picture: "https://www.fiddleheads.com/pub/media/magefan_blog/violinist_woman_inspecting_violin_shopping_adult-artist-entertainment-936030_blurred.jpg"
          },
          {
             title: "3 Recordings after 20 classes",
@@ -564,7 +659,7 @@ const createSeeds = async function () {
             instruments: 'Saxophone',
             price: 100,
             level: "Intermediate",
-            picture:"https://www.newburysaxschool.co.uk/wp-content/uploads/2020/04/maxresdefault.jpg"
+            picture: "https://www.newburysaxschool.co.uk/wp-content/uploads/2020/04/maxresdefault.jpg"
          }
       ]
 
@@ -579,7 +674,7 @@ const createSeeds = async function () {
             console.log(error)
          }
       }
-      
+
       dbClass.forEach((event) => {
          updateUse(event)
          console.log("updated DB")
