@@ -10,7 +10,7 @@ const classesSchema = new Schema(
         instruments: {
             type: String,
             required: true,
-            enum: ['DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
+            enum: ['-', 'DJ', 'Piano', 'Guitar', 'Violin', 'Drums', 'Saxophone', 'Flute', 'Cello',
                 'Clarinet', 'Trumpet', 'Harp', 'Ukelele', 'Electric Guitar', 'Banjo', 'Accordion', 'Microphone']
         },
 
@@ -45,7 +45,7 @@ const classesSchema = new Schema(
         level: {
             type: String,
             required: true,
-            enum: ['Beginner', 'Intermediate', 'Advanced']
+            enum: ['-', 'Beginner', 'Intermediate', 'Advanced']
         }
     },
 
