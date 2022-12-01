@@ -148,7 +148,7 @@ const createSeeds = async function () {
             email: "george@thebeatles.com",
             password: "$2b$10$7fzywPmB/9lOQXE1oOr2beno6Wje50RJAOZ66Bip7PIel7Vkfu8MW",
             instruments: "Electric Guitar",
-            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvqZPRbaAHs1B81rGGgd1l49nAglQ6AU"
+            picture:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmLDu0_sdZETk1ECcw9QesXDuLKRQOrV9Gg&usqp=CAU"
          },
 
          {
@@ -362,7 +362,7 @@ const createSeeds = async function () {
             price: 500,
             instruments: "Guitar",
             description: "Classic Gibson, in perfect conditions.",
-             picture: "https://i.etsystatic.com/20421188/r/il/535720/2226638036/il_570xN.2226638036_d419.jpg"
+             picture: "https://cdn.shopify.com/s/files/1/0343/4368/2183/products/fender-electric-guitars-solid-body-fender-custom-shop-figured-mahogany-stratocaster-natural-2018-u4102513801-29679126413447_2566x.jpg?v=1663015819"
          },
 
          {
@@ -389,20 +389,20 @@ const createSeeds = async function () {
             title: "I'm selling my baby",
             creator: dbUser[3]._id,
             city: "Los Angeles",
-            price: 8000,
+            price: 800,
             instruments: "Electric Guitar",
             description: "The Craziest Guitar Eveeeer. Don't waste this chance",
-             picture: "https://i.pinimg.com/originals/ee/df/69/eedf696e59f535c1a1348fa5d36304e5.jpg"
+             picture: "https://cdn11.bigcommerce.com/s-n9l2n2/images/stencil/1280x1280/products/87064/512596/DSC_5110__63928.1665594846.jpg?c=2"
          },
 
          {
-            title: "Brand New Flamenco Box",
+            title: "Pearl Drums Like New",
             creator: dbUser[4]._id,
             city: "Cadiz",
             price: 1000,
             instruments: "Drums",
             description: "Just get and play. Special price",
-             picture: "https://cajonflamencosoler.com/wp-content/uploads/2021/09/Modelo-Natura.jpeg"
+             picture: "http://cdn.shopify.com/s/files/1/0343/4368/2183/products/pearl-drums-and-percussion-acoustic-drums-full-acoustic-kits-pearl-session-studio-select-13-16-18-24-4pc-drum-kit-nicotine-white-marine-pearl-sts944xp-c405-29171733659783_grande.jpg?v=1649967797"
          },
 
          {
